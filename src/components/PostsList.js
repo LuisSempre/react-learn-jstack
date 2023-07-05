@@ -1,9 +1,11 @@
 import React from 'react';
-
-import { Container } from './styles';
 import Post from './Post';
+import posts from '../posts';
+import styled from 'styled-components';
 
-import posts from './posts';
+export const Container = styled.section`
+  margin-top: 24px;
+`;
 
 export default function PostsList() {
   return (

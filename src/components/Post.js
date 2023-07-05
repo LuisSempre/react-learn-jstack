@@ -1,3 +1,5 @@
+import React from 'react';
+
 import styled from 'styled-components';
 
 export const Container = styled.article`
@@ -19,3 +21,13 @@ export const Container = styled.article`
     margin-top: 8px;
   }
 `;
+
+
+export default function Post({ title, description }) {
+  return (
+    <Container>
+      <h2>{title}</h2>
+      <small>{description}</small>
+    </Container>
+  );
+}

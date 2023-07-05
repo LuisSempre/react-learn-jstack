@@ -1,9 +1,9 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import GlobalStyle from './styles/global';
+import GlobalStyle from './global.js';
 import Layout from './components/Layout';
-import themes from './styles/themes'
+import themes from './themes/index.js'
 
 function App() {
   return (

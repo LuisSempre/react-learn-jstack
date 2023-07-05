@@ -1,7 +1,8 @@
+import React from 'react';
 import styled from 'styled-components';
 
 export const Container = styled.header`
-  background: #111;
+  background: ${({theme}) => theme.headerBackgroundColor};
   height: 100px;
   display: flex;
   align-items: center;
@@ -17,3 +18,12 @@ export const Container = styled.header`
     border: none;
   }
 `;
+
+export default function Header() {
+  return (
+    <Container>
+      <h1>JStack's Blog</h1>
+      <button type="button">🌞</button>
+    </Container>
+  );
+}
