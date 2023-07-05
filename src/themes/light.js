@@ -2,7 +2,7 @@ import commonStyles from './common';
 
 export default {
   ...commonStyles,
-  backgroundColor: '#fff',
+  backgroundColor: 'gray',
   headerBackgroundColor: '#aaa',
   textColor: '#222',
 };
