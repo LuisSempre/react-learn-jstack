@@ -10,12 +10,16 @@ export const Container = styled.header`
   }
 `;
 
-export default function Layout() {
+export default function Layout({ onToggleTheme,
+selectedTheme }) {
   return (
     <Container>
-      <Header />
+      <Header onToggleTheme={onToggleTheme}
+				selectedTheme={selectedTheme}/>
       <PostsList />
-      <Footer />
+      <Footer onToggleTheme={onToggleTheme}
+				selectedTheme={selectedTheme}		
+			/>
     </ Container>
   );
 }
